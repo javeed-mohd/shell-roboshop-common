@@ -20,3 +20,5 @@ if [ $INDEX -le 0 ]; then
 else
     echo -e "$(date "+%Y-%m-%d %H:%M:%S") | Products already loaded... $Y SKIPPING $N"
 fi
+
+print_total_time
