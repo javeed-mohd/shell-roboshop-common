@@ -7,7 +7,7 @@ check_root
 app_setup
 nodejs_setup
 systemd_setup
-system_restart
+app_restart
 
 # Loading date into MongoDB
 cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo

@@ -11,6 +11,7 @@ N="\e[0m"
 SCRIPT_DIR=$PWD
 START_TIME=$(date +%s)
 MONGODB_HOST=mongodb.devopsdaws.online
+MYSQL_HOST=mysql.devopsdaws.online
 
 mkdir -p $LOGS_FOLDER 
 
@@ -48,6 +49,19 @@ nodejs_setup(){
 
     npm install &>> $LOGS_FILE
     VALIDATE $? "Installing Dependencies"
+}
+
+java_setup(){
+
+    dnf install maven -y &>> $LOGS_FILE
+    VALIDATE $? "Installing Maven"
+
+    cd /app 
+    mvn clean package &>> $LOGS_FILE
+    VALIDATE $? "Installing and Building $app_name"
+
+    mv target/$app_name-1.0.jar $app_name.jar 
+    VALIDATE $? "Moving and Renaming $app_name"
 }
 
 app_setup(){
@@ -91,7 +105,7 @@ systemd_setup(){
     VALIDATE $? "Enabling and Starting $app_name"
 }
 
-system_restart(){
+app_restart(){
     systemctl restart $app_name
     VALIDATE $? "Restarting $app_name"
 }
