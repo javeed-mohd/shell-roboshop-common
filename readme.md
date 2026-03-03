@@ -2,17 +2,17 @@
 
 This project automates the deployment of the Roboshop e-commerce application using Shell Scripting and AWS CLI(Command Line Interface).
 
-The primary aim is to avoid the repetitive code and implement DRY (Don't Repeat Yourself) principles for a professional, modular setup.
+The primary aim is to avoid the repetitive code and implement DRY (Don't Repeat Yourself) principles for a professional, clean and modular approach.
 
 ## Project Highlights
 
 * Modular Architecture: Centralized logic using a common.sh file.
 
-* DRY Principles: Shared functions for Node.js, Java, Python, and Nginx application setups.
+* DRY Principles: Node.js, Java, Python, and Nginx application setups.
 
 * Reliability: Idempotent checks (prevents duplicate users/instances) and automated service lifecycle management.
 
-* Detailed Logging: Centralized logging in /var/log/shell-roboshop/ with script execution timers.
+* Detailed Logging: Centralized logging in /var/log/shell-roboshop-common/ along with script execution timers.
 
 # Pre-requisites
 
@@ -60,4 +60,4 @@ sudo sh frontend.sh
 
 # Outcome
 
-I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). Overall, it was a great hands-on experience in automating application...
+I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). Overall, it was a great hands-on experience in automating the Roboshop e-commerce application...
