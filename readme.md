@@ -4,11 +4,13 @@ This project automates the deployment of the Roboshop e-commerce application usi
 
 The primary focus of this version was to move away from repetitive code and implement DRY (Don't Repeat Yourself) principles for a professional, modular setup.
 
-# Project Highlights
+## Project Highlights
 
-Modular Architecture: Centralized logic using a common.sh file.
+* Modular Architecture:
+Centralized logic using a common.sh file.
 
-DRY Principles: Shared functions for Node.js, Java, Python, and Nginx application setups.
+* DRY Principles: 
+Shared functions for Node.js, Java, Python, and Nginx application setups.
 
 Reliability: Idempotent checks (prevents duplicate users/instances) and automated service lifecycle management.
 
