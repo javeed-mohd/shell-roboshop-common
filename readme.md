@@ -1,8 +1,8 @@
 # Roboshop Shell Scripting - DRY Version
 
-This project automates the deployment of the Roboshop e-commerce application using Shell Scripting and AWS CLI.
+This project automates the deployment of the Roboshop e-commerce application using Shell Scripting and AWS CLI(Command Line Interface).
 
-The primary focus of this version was to move away from repetitive code and implement DRY (Don't Repeat Yourself) principles for a professional, modular setup.
+The primary aim is to avoid the repetitive code and implement DRY (Don't Repeat Yourself) principles for a professional, modular setup.
 
 ## Project Highlights
 
@@ -14,7 +14,7 @@ The primary focus of this version was to move away from repetitive code and impl
 
 * Detailed Logging: Centralized logging in /var/log/shell-roboshop/ with script execution timers.
 
-# Prerequisites
+# Pre-requisites
 
 * Infrastructure: 10 EC2 instances (RHEL 9 recommended) named according to the services.
 
@@ -22,7 +22,7 @@ The primary focus of this version was to move away from repetitive code and impl
 
 * AWS CLI: Configured on your workspace to manage Route53 records and EC2 instance states.
 
-# How to Deploy
+# How to Deploy the Services
 
 * Clone the repository: git clone https://github.com/javeed-mohd/shell-roboshop-common.git
 
@@ -32,7 +32,7 @@ The primary focus of this version was to move away from repetitive code and impl
 
 * It is recommended to start with the databases first:
 
-# DATABASES
+# Databases
 
 sudo sh mongodb.sh
 
@@ -42,7 +42,7 @@ sudo sh mysql.sh
 
 sudo sh rabbitmq.sh
 
-# APPLICATION SERVICES (BACKEND)
+# Application Services (BACKEND)
 
 sudo sh catalogue.sh
 
@@ -54,10 +54,10 @@ sudo sh shipping.sh
 
 sudo sh payment.sh
 
-# WEB SERVER(FRONTEND)
+# Web Serer(FRONTEND)
 
 sudo sh frontend.sh
 
-# Learning Journey
+# Outcome
 
-I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). It was a great hands-on exercise in infrastructure automation...
+I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). Overall, it was a great hands-on experience in automating application...
