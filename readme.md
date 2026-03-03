@@ -60,4 +60,4 @@ sudo sh frontend.sh
 
 # Outcome
 
-I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). Overall, it was a great hands-on experience in automating the Roboshop e-commerce application...
+I spent significant time debugging sed(Streamline editor) quoting issues, S3 URL logic, and cross-service permissions (RabbitMQ). Overall, it was a great hands-on experience in automating the Roboshop e-commerce application.
