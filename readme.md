@@ -26,7 +26,7 @@ The primary focus of this version was to move away from repetitive code and impl
 
 * Clone the repository: git clone https://github.com/javeed-mohd/shell-roboshop-common.git
 
-cd shell-roboshop-common/
+  cd shell-roboshop-common/
 
 * Run the scripts: Execute the scripts for each service.
 
